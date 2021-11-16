@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circular Progress Bar</title>
+    <!-- Gooogle Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="">
+      <input
+        type="number"
+        id="number"
+        name="number"
+        placeholder="enter the number"
+        min="0"
+        max="100"
+        onchange="percentChange()"
+      />
+      <!-- <input type="submit" /> -->
+    </form>
+    <div class="circular-progress">
+      <div class="value-container">0%</div>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js">
+
+
+      // let progressBar = document.querySelector(".circular-progress");
+      // let valueContainer = document.querySelector(".value-container");
+      // let input = document.getElementById("number");
+      // let progressValue = 0;
+      // let speed = 50;
+
+      // const submitBtn = document.getElementById("submit-button");
+
+      // function percentChange() {
+      //   console.log("salam");
+
+      //   let progress = setInterval(() => {
+      //     progressEndValue = input.value;
+      //     if (progressEndValue > 100 || progressEndValue < 0) {
+      //       progressEndValue = 0;
+      //     }
+
+      //     progressValue++;
+      //     if (progressEndValue == 0) {
+      //       valueContainer.textContent = `0%`;
+      //       progressBar.style.background = `conic-gradient(
+      //         #4d5bf9 ${0 * 3.6}deg,
+      //         #cadcff ${0 * 3.6}deg
+      //     )`;
+      //       clearInterval(progress);
+      //       progressValue = 0;
+      //     } else {
+      //       valueContainer.textContent = `${progressValue}%`;
+
+      //       progressBar.style.background = `conic-gradient(
+      //                       #4d5bf9 ${progressValue * 3.6}deg,
+      //                       #cadcff ${progressValue * 3.6}deg
+      //                   )`;
+      //     }
+
+      //     if (progressValue == progressEndValue) {
+      //       clearInterval(progress);
+      //       progressValue = 0;
+      //     }
+      //   }, speed);
+      //}
+    </script>
+  </body>
+</html>

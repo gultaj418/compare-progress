@@ -1,0 +1,41 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circular-progress {
+  position: relative;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffa30e;
+
+  transition: all 4s ease;
+}
+.circular-progress:before {
+  content: "";
+  position: absolute;
+  height: 80%;
+  width: 80%;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.value-container {
+  position: relative;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #470137;
+  font-size: 100px;
+}
+
+#number {
+  width: 120px;
+  height: 30px;
+  border-radius: 10px;
+  border: 4px solid #470137;
+  position: absolute;
+  left: 10%;
+}
